@@ -6,8 +6,6 @@ const port = 3000;
 let allNotes = [];
 let workNotes = [];
 
-function doneTask() {}
-
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -21,12 +19,10 @@ app.get("/work", (req, res) => {
 app.post("/submit", (req, res) => {
   allNotes.push(req.body["usernote"]);
   res.render("index.ejs", { allNotes, today });
-  console.log(allNotes.length);
 });
 app.post("/submitw", (req, res) => {
   workNotes.push(req.body["usernote"]);
   res.render("work.ejs", { workNotes, today });
-  console.log(workNotes.length);
 });
 const days = [
   "Sunday",

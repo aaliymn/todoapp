@@ -11,20 +11,20 @@
     <% if (locals.allNotes){ %> <% for ( let i = 0; i < allNotes.length; i++){
     %>
     <div class="item" id="<%= allNotes[i] %>">
-      <input type="checkbox" name="" id="close<%= allNotes[i] %>" />
       <p><%= allNotes[i] %></p>
+      <button id="delitem">X</button>
     </div>
     <% }} %>
 
-    <div class="userinput item">
+    <div class="userinput">
       <form action="/submit" method="post">
         <input
           type="text"
           name="usernote"
           placeholder="Write your note here"
-          id=""
+          id="tinput"
         />
-        <input type="submit" value="+" />
+        <input id="binput" type="submit" value="+" />
       </form>
     </div>
   </div>
