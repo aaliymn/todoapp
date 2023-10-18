@@ -1,0 +1,57 @@
+body {
+  background-color: rgb(185, 218, 255);
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  padding: 10px;
+  margin: 50px auto;
+  background-color: aliceblue;
+  color: rgb(0, 66, 141);
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+.date {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: large;
+  user-select: none;
+}
+.date h2 {
+  margin: 0;
+}
+.item {
+  display: flex;
+  gap: 20px;
+}
+.item input {
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 10px;
+  border: none;
+}
+
+.toplinks {
+  display: inline-block;
+  margin: 20px 0;
+}
+.toplinks a {
+  color: rgb(0, 66, 141);
+  text-decoration: none;
+  margin: 0 10px;
+  transition: 0.1s;
+  padding: 5px;
+  border-radius: 10px;
+}
+.toplinks a:hover {
+  background-color: rgb(0, 66, 141);
+  color: aliceblue;
+}
